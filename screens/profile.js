@@ -2,7 +2,6 @@ import {styles} from "../Styles";
 import {Text, View, Image} from "react-native";
 import {useEffect} from "react";
 
-
 export const Profile = ({navigation, route}) => {
 
     useEffect(() => {
@@ -17,6 +16,7 @@ export const Profile = ({navigation, route}) => {
             <Image style={styles.img} source={{
                 uri: 'https://www.gravatar.com/avatar/d5730a6281a92d6c547a08b259e7f07a?s=200',
             }}></Image>
+            <Text>Email: {route.params.Email}</Text>
             {route.params.Student === "Student" && <Text>You are a Student.</Text>}
         </View>
     );

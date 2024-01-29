@@ -10,7 +10,6 @@ export const Form = ({navigation}) => {
     const [email, setEmail] = useState("");
     const [student, setStudent] = useState("Student");
 
-
     const onSubmit = () => {
         const params = {Name: Name, Email: email, Student: student};
 
@@ -40,7 +39,6 @@ export const Form = ({navigation}) => {
             <Text style={{color: "#fff"}}>Register an account!</Text>
             <TextInput
                 style={styles.textBox}
-                secureTextEntry={true}
                 placeholder="Name"
                 onChangeText={val => setName(val)}
             />
